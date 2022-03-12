@@ -7,8 +7,18 @@ import {
   ProfileReceived,
   ProfileName,
   ProfileAndContent,
-  DataEmail
+  DataEmail,
+  NameReceived,
+  Paragraph,
+  SpanIcon,
+  DivHourCopied,
+  ContainerCopiedMessages,
+  PerfilCopied
 } from "./styles";
+import { 
+  BiMessageSquareDetail,
+  BiPaperPlane 
+} from 'react-icons/bi'
 
 export function MainMail() {
   return (
@@ -22,25 +32,25 @@ export function MainMail() {
                   <ProfileName>Perfil</ProfileName>
                 </ProfileReceived>
                 <DataEmail>
-                  <h3>José Ronaldo</h3>
-                  <p>
-                    <span>icone</span>
+                  <NameReceived>José Ronaldo</NameReceived>
+                  <Paragraph>
+                    <SpanIcon><BiMessageSquareDetail/></SpanIcon>
                     Bom dia, solicito minhas férias para janeiro.
-                  </p>
-                  <p>
-                    <span>icone</span>
+                  </Paragraph>
+                  <Paragraph>
+                    <SpanIcon><BiPaperPlane/></SpanIcon>
                     Tarefa 1
-                  </p>
+                  </Paragraph>
                 </DataEmail>
               </ProfileAndContent>
-              <div>
-                <p>Hoje, 15:54</p>
-                <div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
+              <DivHourCopied>
+                <Paragraph>Hoje, 15:54</Paragraph>
+                <ContainerCopiedMessages>
+                  <PerfilCopied></PerfilCopied>
+                  <PerfilCopied></PerfilCopied>
+                  <PerfilCopied></PerfilCopied>
+                </ContainerCopiedMessages>
+              </DivHourCopied>
             </ContentEmail>
           </List>
         </Unlist>

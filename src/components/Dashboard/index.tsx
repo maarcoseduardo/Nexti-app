@@ -1,12 +1,14 @@
-import { MainMail } from "../MainMail";
+import { SearchTop } from "../SearchTop";
 import { SideBar } from "../SideBar";
 
-import { ContainerDashboard } from './styles';
+import { ContainerDashboard } from "./styles";
 export function Dashboard() {
   return (
-    <ContainerDashboard>
-      <SideBar />
-      <MainMail />
-    </ContainerDashboard>
+    <>
+      <ContainerDashboard>
+        <SideBar />
+        <SearchTop />
+      </ContainerDashboard>
+    </>
   );
 }
