@@ -1,19 +1,20 @@
-import { 
+import {
   Container,
   Content,
   Input,
   ContainerButtons,
   Unlist,
   List,
-  Button
+  Button,
+  ButtonFilter,
 } from "./styles";
-import { BiFilterAlt } from 'react-icons/bi';
+import { BiFilterAlt } from "react-icons/bi";
 
 export function SearchTop() {
   return (
     <Container>
       <Content>
-        <Input placeholder="Pesquisar"/>
+        <Input placeholder="Pesquisar" />
         <ContainerButtons>
           <Unlist>
             <List>
@@ -29,7 +30,9 @@ export function SearchTop() {
               <Button>AGENDAR</Button>
             </List>
           </Unlist>
-          <span> <BiFilterAlt /> </span>
+          <ButtonFilter>
+            <BiFilterAlt />
+          </ButtonFilter>
         </ContainerButtons>
       </Content>
     </Container>

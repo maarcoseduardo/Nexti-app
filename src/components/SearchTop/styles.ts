@@ -4,7 +4,9 @@ import styled from 'styled-components';
 export const Container = styled.section`
     max-width: 1550px;
     width: 100%;
+    height: 180px;
     padding: 2rem;
+    background: var(--grey-100);
 `;
 
 export const Content = styled.div`
@@ -43,4 +45,10 @@ export const Button = styled.button`
     background-color: var(--orange-600);
     border-radius: 5px;
     font-weight: bold;
+    color: var(--white);
+`;
+
+export const ButtonFilter = styled.button`
+    cursor: pointer;
+    padding:0 0.5rem;
 `;
