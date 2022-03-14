@@ -20,7 +20,7 @@ import {
   BiPaperPlane 
 } from 'react-icons/bi'
 
-export function MainMail() {
+export function Mail() {
   return (
     <Container>
       <Content>

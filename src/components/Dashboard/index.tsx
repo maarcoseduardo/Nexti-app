@@ -1,4 +1,4 @@
-import { SearchTop } from "../SearchTop";
+import { Main } from "../Main";
 import { SideBar } from "../SideBar";
 
 import { ContainerDashboard } from "./styles";
@@ -7,7 +7,7 @@ export function Dashboard() {
     <>
       <ContainerDashboard>
         <SideBar />
-        <SearchTop />
+        <Main />
       </ContainerDashboard>
     </>
   );

@@ -4,6 +4,7 @@ export const Container = styled.main`
     max-width: 1550px;
     width: 100%;
     padding: 0 2rem;
+    border-bottom: 1px solid var(--grey-400);
 `;
 
 export const Content = styled.div`
@@ -16,7 +17,7 @@ export const Unlist = styled.ul`
 `;
 
 export const List = styled.li`
-    border-bottom: 1px solid var(--grey-400);
+    
 `;
 
 export const ContentEmail = styled.div`

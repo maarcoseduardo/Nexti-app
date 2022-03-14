@@ -1,26 +1,39 @@
+import { useState } from "react";
+import { Hamburguer } from "./Hamburguer";
 import {
   HeaderContainer,
   HeaderContent,
-  Hamburguer,
+  HamburguerButton,
+  UnListBurguer,
   Unlist,
   List,
   Button,
 } from "./styles";
 
 export function Header() {
+
+  const [open, setOpen] = useState(false);
+  const ToggleMenu = () => {
+    setOpen(!open)
+  }
+  console.log(open)
   return (
     <>
       <HeaderContainer>
         <HeaderContent>
-          <Hamburguer>---</Hamburguer>
-          <Unlist>
-            <List>
-              <Button>Ajuda</Button>
-            </List>
-            <List>
-              <Button>Configurações</Button>
-            </List>
-          </Unlist>
+          <HamburguerButton onClick={ToggleMenu}>
+            <Hamburguer open={open} />
+          </HamburguerButton>
+          <UnListBurguer open={open}>
+            <Unlist>
+              <List>
+                <Button>Ajuda</Button>
+              </List>
+              <List>
+                <Button>Configurações</Button>
+              </List>
+            </Unlist>
+          </UnListBurguer>
         </HeaderContent>
       </HeaderContainer>
     </>
