@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   max-width: 400px;
-  height: 900px;
+  height: 600px;
+  max-height: 100vh;
   width: 100%;
   background: var(--grey-100);
   padding: 2rem 3rem;

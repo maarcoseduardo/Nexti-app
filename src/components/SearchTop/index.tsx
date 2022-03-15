@@ -5,6 +5,7 @@ import {
   ContainerButtons,
   Unlist,
   List,
+  InputCheckBox,
   Button,
   ButtonFilter,
 } from "./styles";
@@ -18,7 +19,7 @@ export function SearchTop() {
         <ContainerButtons>
           <Unlist>
             <List>
-              <Button>a</Button>
+              <InputCheckBox type="checkbox"/>
             </List>
             <List>
               <Button>ATRIBUIR</Button>

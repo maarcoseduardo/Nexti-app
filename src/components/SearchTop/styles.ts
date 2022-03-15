@@ -35,9 +35,15 @@ export const Unlist = styled.ul`
     display: flex;
     width: 380px;
     justify-content: space-between;
+    align-items: center;
 `;
 
 export const List = styled.li`
+`;
+
+export const InputCheckBox = styled.input`
+    width: 1.2rem;
+    height: 1.2rem ;
 `;
 
 export const Button = styled.button`
@@ -50,5 +56,7 @@ export const Button = styled.button`
 
 export const ButtonFilter = styled.button`
     cursor: pointer;
-    padding:0 0.5rem;
+    padding: 0 0.5rem;
+    width:2rem;
+    height:2rem;
 `;

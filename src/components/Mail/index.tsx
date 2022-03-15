@@ -39,7 +39,7 @@ export function Mail() {
             <ContentEmail>
               <ProfileAndContent>
                 <ProfileReceived>
-                  <ProfileName>Perfil</ProfileName>
+                  <ProfileName>Profile</ProfileName>
                 </ProfileReceived>
                 <DataEmail>
                   <NameReceived>José Ronaldo</NameReceived>

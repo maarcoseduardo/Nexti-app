@@ -57,10 +57,11 @@ export const DataEmail = styled.div`
 
 export const NameReceived = styled.h3`
     margin: 0.2rem 0;
+    color: var(--grey-400);
 `;
 
 export const Paragraph = styled.p`
-
+    color: var(--grey-400);
 `;
 
 export const SpanIcon = styled.span`
