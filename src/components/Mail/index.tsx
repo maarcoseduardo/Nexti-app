@@ -15,54 +15,54 @@ import {
   ContainerCopiedMessages,
   PerfilCopied
 } from "./styles";
-import {
+import { 
   BiMessageSquareDetail,
-  BiPaperPlane
+  BiPaperPlane 
 } from 'react-icons/bi'
 import { useEffect, useState } from "react";
+import { apiPeoples } from "../../services/apiPeoples";
 
 export function Mail() {
 
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-    setUsers(users)
+    apiPeoples.get('/')
+    .then( response => setUsers(response.data))
   }, [])
 
   return (
     <Container>
       <Content>
         <Unlist>
-          {users.map((users) => {  //alterar campos 
-            <List >
-              <ContentEmail>
-                <ProfileAndContent>
-                  <ProfileReceived>
-                    <ProfileName>Perfil</ProfileName>
-                  </ProfileReceived>
-                  <DataEmail>
-                    <NameReceived>José Ronaldo</NameReceived>
-                    <Paragraph>
-                      <SpanIcon><BiMessageSquareDetail /></SpanIcon>
-                      Bom dia, solicito minhas férias para janeiro.
-                    </Paragraph>
-                    <Paragraph>
-                      <SpanIcon><BiPaperPlane /></SpanIcon>
-                      Tarefa 1
-                    </Paragraph>
-                  </DataEmail>
-                </ProfileAndContent>
-                <DivHourCopied>
-                  <Paragraph>Hoje, 15:54</Paragraph>
-                  <ContainerCopiedMessages>
-                    <PerfilCopied></PerfilCopied>
-                    <PerfilCopied></PerfilCopied>
-                    <PerfilCopied></PerfilCopied>
-                  </ContainerCopiedMessages>
-                </DivHourCopied>
-              </ContentEmail>
-            </List>
-          })}
+          <List>
+            <ContentEmail>
+              <ProfileAndContent>
+                <ProfileReceived>
+                  <ProfileName>Perfil</ProfileName>
+                </ProfileReceived>
+                <DataEmail>
+                  <NameReceived>José Ronaldo</NameReceived>
+                  <Paragraph>
+                    <SpanIcon><BiMessageSquareDetail/></SpanIcon>
+                    Bom dia, solicito minhas férias para janeiro.
+                  </Paragraph>
+                  <Paragraph>
+                    <SpanIcon><BiPaperPlane/></SpanIcon>
+                    Tarefa 1
+                  </Paragraph>
+                </DataEmail>
+              </ProfileAndContent>
+              <DivHourCopied>
+                <Paragraph>Hoje, 15:54</Paragraph>
+                <ContainerCopiedMessages>
+                  <PerfilCopied></PerfilCopied>
+                  <PerfilCopied></PerfilCopied>
+                  <PerfilCopied></PerfilCopied>
+                </ContainerCopiedMessages>
+              </DivHourCopied>
+            </ContentEmail>
+          </List>
         </Unlist>
       </Content>
     </Container>
