@@ -9,7 +9,7 @@ export function Hamburguer({ open, setOpen }: HamburguerProps) {
     
     return (
     <>
-      <Burguer open={open} onClick={()=> setOpen}>
+      <Burguer open={open} onClick={() => setOpen}>
         <Bullet />
         <Bullet />
         <Bullet />

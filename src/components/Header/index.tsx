@@ -16,7 +16,6 @@ export function Header() {
   const ToggleMenu = () => {
     setOpen(!open)
   }
-  console.log(open)
   return (
     <>
       <HeaderContainer>
