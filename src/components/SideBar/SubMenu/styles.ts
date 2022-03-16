@@ -12,4 +12,5 @@ export const Unlist = styled.ul<SubMenuProps>`
 export const List = styled.li`
   margin-left: 4.5rem;
   color: var(--grey-400);
+  font-size: 1rem;
 `;

@@ -3,11 +3,15 @@ import styled from "styled-components";
 export const Container = styled.section`
   max-width: 400px;
   height: 800px;
-  max-height: 100vh;
   width: 100%;
   background: var(--grey-100);
   padding: 2rem 3rem;
   border-right: 1px solid var(--grey-400);
+  @media (max-width: 670px) {
+    height: 500px;
+    border-right: none;
+    margin: 0 auto;
+  }
 `;
 
 export const Content = styled.div``;
@@ -88,6 +92,7 @@ export const ButtonTasks = styled.button`
   width: 100%;
   margin: 2rem 0;
   color: var(--grey-400);
+  font-size: 1rem;
 `;
 
 export const ContentTasks = styled.div`

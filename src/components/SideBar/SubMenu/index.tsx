@@ -10,7 +10,7 @@ export function SubMenu({ open, setOpen, subMenu }: SubMenuProps) {
   return (
     <>
       <Unlist open={open} onClick={() => setOpen}>
-        <List>Tarefa</List>
+        <List>Subtarefa</List>
         {/* {subMenu.map((item) => (
                     <List key={item.id}>
                         {item.name}

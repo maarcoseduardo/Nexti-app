@@ -22,7 +22,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
         text-decoration: none;
         list-style: none;
-        
+        font-family: 'Roboto';
     }
 
 

@@ -29,6 +29,7 @@ export const ContentEmail = styled.div`
   @media (max-width: 670px) {
     flex-direction: column;
     height: 300px;
+    background: var(--white);
   }
 `;
 
@@ -39,6 +40,9 @@ export const ProfileReceived = styled.div`
   border-radius: 50%;
   position: relative;
   margin-right: 1rem;
+  @media (max-width: 670px) {
+    margin: 0 auto;
+  }
 `;
 
 export const ProfileName = styled.div`
@@ -74,7 +78,7 @@ export const NameReceived = styled.h3`
 
 export const Paragraph = styled.p`
   color: var(--grey-400);
-
+  
   @media (max-width: 670px) {
     margin-top: 2rem;
     text-align: center;
@@ -89,6 +93,10 @@ export const DivHourCopied = styled.div``;
 
 export const ContainerCopiedMessages = styled.div`
   display: flex;
+  margin-top: 1rem;
+  @media (max-width: 670px) {
+    margin: 1rem 0 0 1.2rem;
+  }
 `;
 
 export const PerfilCopied = styled.div`
