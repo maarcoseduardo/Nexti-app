@@ -13,7 +13,7 @@ export const Burguer = styled.div<BurguerProps>`
   position: fixed;
   top: 1.5rem;
   left: 1.5rem;
-  z-index: 20;
+  z-index: 10;
   display: none;
 
   @media (max-width: 1080px) {

@@ -23,19 +23,18 @@ import { AiOutlineCaretDown, AiOutlineRight } from "react-icons/ai";
 import { apiMenu } from "../../services/apiMenu";
 
 export function SideBar() {
-    const [open, setOpen] = useState(false)
-    
-    const ToggleMenuTasks = () => {
-      setOpen(!open)
-    }
+  const [open, setOpen] = useState(false);
 
-    const [tasks, setTasks] = useState([]);
+  const ToggleMenuTasks = () => {
+    setOpen(!open);
+  };
 
-    useEffect(() => {
-      apiMenu.get('/')
-      .then(response => setTasks(response.data))
-    }, [])
-    
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    apiMenu.get("/").then((response) => setTasks(response.data));
+  }, []);
+
   return (
     <Container>
       <Content>
@@ -66,7 +65,8 @@ export function SideBar() {
             </ContentTasks>
             <SpanValueTasks>15</SpanValueTasks>
           </ButtonTasks>
-          <SubMenu open={open} subMenu={tasks}/> {/* adicionar retorno do array e verificar se tem submenu*/}
+          <SubMenu open={open} subMenu={tasks} />{" "}
+          {/* adicionar retorno do array e verificar se tem submenu*/}
           {/* <ButtonTasks>
             <ContentTasks>
               <SpanArrowLeft>

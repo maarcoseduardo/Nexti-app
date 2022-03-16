@@ -19,7 +19,7 @@ export function SearchTop() {
         <ContainerButtons>
           <Unlist>
             <List>
-              <InputCheckBox type="checkbox"/>
+              <InputCheckBox type="checkbox" />
             </List>
             <List>
               <Button>ATRIBUIR</Button>

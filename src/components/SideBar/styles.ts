@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   max-width: 400px;
-  height: 600px;
+  height: 800px;
   max-height: 100vh;
   width: 100%;
   background: var(--grey-100);
@@ -17,6 +17,10 @@ export const ContainerProfile = styled.div`
   justify-content: space-between;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--grey-400);
+
+  @media (max-width: 670px) {
+    display: block;
+  }
 `;
 
 export const Profile = styled.div`
@@ -25,6 +29,10 @@ export const Profile = styled.div`
   background: var(--purple-800);
   border-radius: 50%;
   position: relative;
+
+  @media (max-width: 670px) {
+    margin: 0 auto;
+  }
 `;
 
 //ADICIONAR BOLA DE STATUS NO PERFIL USUARIO
@@ -49,6 +57,10 @@ export const ButtonNew = styled.button`
   width: 60px;
   color: var(--orange-600);
   font-weight: bold;
+
+  @media (max-width: 670px) {
+    margin: 1rem auto;
+  }
 `;
 
 export const ArrowDown = styled.span``;

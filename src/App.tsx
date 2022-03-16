@@ -6,11 +6,13 @@ import GlobalStyle from "./styles/GlobalStyle";
 type UserProps = {
   user: string;
   password: string;
-}
+};
 
 export function App() {
-
-  const [userLogged, setUserLogged] = useState<UserProps>({user: 'user', password: '123'})
+  const [userLogged, setUserLogged] = useState<UserProps>({
+    user: "user",
+    password: "123",
+  });
 
   return (
     <>

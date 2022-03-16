@@ -17,8 +17,7 @@ export const HeaderContent = styled.div`
   background: var(--grey-600);
 `;
 
-export const HamburguerButton = styled.button`
-`;
+export const HamburguerButton = styled.button``;
 
 export const UnListBurguer = styled.div<BurguerProps>`
   @media (max-width: 1080px) {
@@ -33,7 +32,7 @@ export const UnListBurguer = styled.div<BurguerProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index:2;
+    z-index: 2;
   }
 `;
 
@@ -49,16 +48,15 @@ export const Unlist = styled.ul`
   }
 `;
 
-export const List = styled.li`
-`;
+export const List = styled.li``;
 
 export const Button = styled.button`
   border: none;
   box-shadow: none;
   color: var(--white);
 
-  @media (max-width: 1080px){
+  @media (max-width: 1080px) {
     margin: 3rem 0;
-    color: var(--orange-600);;
+    color: var(--orange-600);
   }
 `;

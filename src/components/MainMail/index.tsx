@@ -16,16 +16,8 @@ import {
   PerfilCopied,
 } from "./styles";
 import { BiMessageSquareDetail, BiPaperPlane } from "react-icons/bi";
-import { useEffect, useState } from "react";
-import { apiPeoples } from "../../services/apiPeoples";
 
-export function Mail() {
-  const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-    apiPeoples.get("/").then((response) => setUsers(response.data));
-  }, []);
-
+export function MainMail() {
   return (
     <Container>
       <Content>
@@ -34,7 +26,7 @@ export function Mail() {
             <ContentEmail>
               <ProfileAndContent>
                 <ProfileReceived>
-                  <ProfileName>Profile</ProfileName>
+                  <ProfileName>Perfil</ProfileName>
                 </ProfileReceived>
                 <DataEmail>
                   <NameReceived>José Ronaldo</NameReceived>

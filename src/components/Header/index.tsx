@@ -11,11 +11,10 @@ import {
 } from "./styles";
 
 export function Header() {
-
   const [open, setOpen] = useState(false);
   const ToggleMenu = () => {
-    setOpen(!open)
-  }
+    setOpen(!open);
+  };
   return (
     <>
       <HeaderContainer>

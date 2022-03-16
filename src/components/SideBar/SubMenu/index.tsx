@@ -1,28 +1,22 @@
-import {
-    Unlist,
-    List
-} from './styles';
+import { Unlist, List } from "./styles";
 
 interface SubMenuProps {
-    open: boolean;
-    setOpen?: any;
-    subMenu?: any[];
+  open: boolean;
+  setOpen?: any;
+  subMenu?: any[];
 }
 
 export function SubMenu({ open, setOpen, subMenu }: SubMenuProps) {
-
-    return (
-        <>
-            <Unlist open={open} onClick={() => setOpen}>
-                <List>
-                    Tarefa
-                </List>
-                {/* {subMenu.map((item) => (
+  return (
+    <>
+      <Unlist open={open} onClick={() => setOpen}>
+        <List>Tarefa</List>
+        {/* {subMenu.map((item) => (
                     <List key={item.id}>
                         {item.name}
                     </List>
                 ))} */}
-            </Unlist>
-        </>
-    )
+      </Unlist>
+    </>
+  );
 }
