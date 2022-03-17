@@ -24,7 +24,7 @@
 
 ## 💻 Projeto
 
-**Nexti App é um projeto para um teste técnico de uma empresa. No qual devemos desenvolver todo front-end responsivo e consumir duas Api's internas da empresa. Devido a problemas técnicos com a API, o projeto foi cancelado, mas deixarei este projeto em meu portifólio.
+**Nexti App é um projeto para um teste técnico de uma empresa. No qual devemos desenvolver todo front-end responsivo e consumir duas Api's internas da empresa. Devido a problemas técnicos com a API, o projeto pode ser cancelado, mas deixarei este projeto em meu portifólio.
 .**
 
 ---
